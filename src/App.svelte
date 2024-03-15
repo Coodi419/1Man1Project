@@ -7,24 +7,93 @@
 	import Article from './components/Article.svelte';
 	export let name;
 </script>
-
 <main>
-	<Header/>
-	<Nav/>
-	<Aside/>
-	<Section>
-		<Article/>
-		<Article/>
-	</Section>
-	<Footer/>
+	<div id="tool_bar">
+		<div id="search_tool">
+			<form class="search_bar">
+				<a href="/" title="아무 문서로 이동" id="random"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" id="random_icon" data-v-3070b92f=""><path d="M403.8 34.4c12-5 25.7-2.2 34.9 6.9l64 64c6 6 9.4 14.1 9.4 22.6s-3.4 16.6-9.4 22.6l-64 64c-9.2 9.2-22.9 11.9-34.9 6.9s-19.8-16.6-19.8-29.6V160H352c-10.1 0-19.6 4.7-25.6 12.8L284 229.3 244 176l31.2-41.6C293.3 110.2 321.8 96 352 96h32V64c0-12.9 7.8-24.6 19.8-29.6zM164 282.7L204 336l-31.2 41.6C154.7 401.8 126.2 416 96 416H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H96c10.1 0 19.6-4.7 25.6-12.8L164 282.7zm274.6 188c-9.2 9.2-22.9 11.9-34.9 6.9s-19.8-16.6-19.8-29.6V416H352c-30.2 0-58.7-14.2-76.8-38.4L121.6 172.8c-6-8.1-15.5-12.8-25.6-12.8H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H96c30.2 0 58.7 14.2 76.8 38.4L326.4 339.2c6 8.1 15.5 12.8 25.6 12.8h32V320c0-12.9 7.8-24.6 19.8-29.6s25.7-2.2 34.9 6.9l64 64c6 6 9.4 14.1 9.4 22.6s-3.4 16.6-9.4 22.6l-64 64z"></path></svg></a>
+				<input type="search" placeholder="여기에서 검색" autocomplete="off" spellcheck="false" tabindex="1" value="" class="i8Hdr6+m" data-v-3070b92f="">
+			</form>
+		</div>
+	</div>
+	<div id="contents">
+		<Header/>	
+		<Nav/>
+		<Aside/>
+		<Section/>
+		<Footer/>
+	</div>
 </main>
 
 <style>
 	main {
-		text-align: center;
 		padding: 0;
 		max-width: 240px;
 		margin: 0 auto;
+	}
+
+	input { 
+		font-family: inherit;
+		font-size: 100%;
+		line-height: 1.15;
+		margin: 0;
+	}
+
+	.search_bar{
+		position: relative;
+		align-items: stretch;
+    	background-color: #fff;
+    	border-radius: 4px;
+		display: flex;
+		flex: 1;
+		height: 100%;
+		width: 0;
+		cursor: pointer;
+		text-decoration: none;
+	}
+
+	#random {
+		background-color: #fff;
+		border-radius: 4px;
+		padding: 0;
+		width: 2.5rem;
+		align-items: center;
+		color: #212529;
+		display: flex;
+		justify-content: center;
+	}
+	#random_icon {
+		fill: currentColor;
+		width: 0.85rem;
+	}
+	#search_tool {
+		align-self: center;
+		margin-left: 0.75rem;
+		margin-right: 0.75rem;
+		border-radius: 4px;
+		display: flex;
+		gap: 0.5rem;
+		height: 2.5rem;
+		width: 20rem;
+	}
+	#contents {
+		background-color: #ffffff;
+		height: 100%;
+		width: 62%;
+		margin-left: 9%;
+		margin-top: 15px;
+		border-radius: 5px;
+		border: 1px solid #ccc;
+		outline-offset: -2px;
+		padding-block: 1px;
+		padding-inline: 2px;
+	}
+
+	#tool_bar {
+		width: 100%;
+		height: 40px;
+		padding: 6px;
+		background: linear-gradient(90deg, #00a69c, #00a69c, #28b472);
 	}
 
 	@media (min-width: 640px) {
