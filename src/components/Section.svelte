@@ -6,10 +6,11 @@
                 21기 WP평균. 그중 커뮤니티 영역을 맡고있다. 前 테트리스 고인물 現 김승억 사무국장 놀리기 챔피언이다.
             </div>
         </div>
-        <h2><ion-icon name="chevron-down-outline" id="down_arrow_2" class="down_arrow"></ion-icon><a href="/" id="num_2">1.</a><span id="headline_2" class="headline">&nbsp개요</span></h2>
+        <h2><ion-icon name="chevron-down-outline" id="down_arrow_2" class="down_arrow"></ion-icon><a href="/" id="num_2">2.</a><span id="headline_2" class="headline">&nbsp빌런력</span></h2>
         <div id="section_2">
             <div id="text_contents">
-                21기 WP평균. 그중 커뮤니티 영역을 맡고있다. 前 테트리스 고인물 現 김승억 사무국장 놀리기 챔피언이다.
+                빌런력 890 <br>
+                무시무시한 빌런력의 소유자다.  vrchat 갤러리에서 음지글을 작성하다 고로시당한 전적이 있다. 21기 테러단체 "Disablo"에 속해있다.
             </div>
         </div>
     </div>
